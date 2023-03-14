@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +11,71 @@
 <body>
    <div id="hero">
     <video autoplay loop muted>
-        <source src="HARUN DURSUN (2).mp4" type="video/mp4">
+        <source src="a.mp4" type="video/mp4">
+        
     </video>
+    <div class="service">
+        <div class="tittle">
+            <h2>DAHA FAZLASI</h2>
+        </div>
+
+        <div class="box">   
+            <div class="card">
+                <i class="fas fa fa-bars"></i>
+                <h5></h5>
+                <div class="pra" id="haro">
+                <p>merhbaa ben harun</p>
+                    <p style="text-align: center;">
+                        <a href="#" class="button">read more</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa fa-user"></i>
+                <h5>KİŞİSEL</h5>
+                <div class="pra">
+                    <p>21 YAŞINDAYIM. 2 YILDAN FAZLADIR YAZILIM ALANINDA KEDİMİ GELİŞTİRİYORUM</p>
+            
+                    <p style="text-align: center;">
+                        <a href="#" class="button">read more</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <i class="fas fa fa-bell"></i>
+                <h5>BİLDİRİM</h5>
+                <div class="pra">
+                    <p>PROJELER VE WEB SİTELERİ HAKKINDA DAHA FAZLA BİLGİ İÇİN BANA SOSYAL MEDYA HESAPLARIMDAN ULAŞABİLİRSİNİZ</p>
+            
+                    <p style="text-align: center;">
+                        <a href="#" class="button">read more</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
    </div>
+   <script>
+    const btn = document.querySelector(".read-more");
+    const text = document.querySelector(".long-text p");
+    let isExpanded = false;
+  
+    btn.addEventListener("click", function () {
+      if (!isExpanded) {
+        text.style.height = "auto";
+        btn.innerHTML = "Daha Az";
+        isExpanded = true;
+      } else {
+        text.style.height = "120px";
+        btn.innerHTML = "Devam Et";
+        isExpanded = false;
+      }
+    });
+  </script>
+  
 </body>
 </html>
